@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/WaterScenes/waterscenes.github.io",
+  "homepage": "https://github.com/USVTrack/usvtrack.github.io",
   "private": true,
   "scripts": {
     "build": "max build",

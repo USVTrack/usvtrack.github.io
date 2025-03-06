@@ -8,9 +8,9 @@ import { Radar } from '@ant-design/plots';
 import { Table, Tag, Affix, Image } from 'antd';
 import { Col, Row, Avatar, List, Divider } from 'antd';
 import { each, groupBy } from '@antv/util';
-import adverse from "./images/adverse-4.png"
-import USV from "./images/USV.png"
-import network from "./images/WaterScenes-network.png"
+import samples from "./images/USVTrack-samples.png"
+import USV from "./images/USVTrack-USV.png"
+import results from "./images/USVTrack-results.png"
 
 const Feature40DataSource = {
   wrapper: { className: 'home-page-wrapper content6-wrapper' },
@@ -362,29 +362,29 @@ class RadarChart extends React.PureComponent {
 
     const contributions = [
       {
-        title: 'WaterScenes, the first multi-task 4D radar-camera fusion dataset on water surfaces, which offers data from multiple sensors, including a 4D radar, monocular camera, GPS, and IMU. It can be applied in multiple tasks, such as <b>object detection</b>, <b>instance segmentation</b>, <b>semantic segmentation</b>, <b>free-space segmentation</b>, and <b>waterline segmentation</b>.',
+        title: 'USVTrack, the first 4D radar-camera tracking dataset in inland waterways, which offers data from multiple sensors, including a 4D radar, monocular camera, GPS, and IMU.',
       },
       {
-        title: 'Our dataset covers diverse <b>time conditions</b> (daytime, nightfall, night), <b>lighting conditions</b> (normal, dim, strong), <b>weather conditions</b> (sunny, overcast, rainy, snowy) and <b>waterway conditions</b> (river, lake, canal, moat). An information list is also offered for retrieving specific data for experiments under different conditions.',
+        title: 'Our dataset covers a rich diversity of data samples, including <b>various waterways</b> (wide and narrow rivers, canals, moats, docks), diverse <b>time conditions</b> (daytime, nightfall, night), <b>weather conditions</b> (sunny, overcast, rainy, snowy) and <b>lighting conditions</b> (normal, dim, strong).',
       },
       {
-        title: 'We provide <b>2D box-level</b> and <b>pixel-level</b> annotations for camera images, and <b>3D point-level</b> annotations for radar point clouds. We also We provide a <b>toolkit</b> for radar point clouds that includes: pre-processing, labeling, projection and visualization, assisting researchers in processing and analyzing our dataset.',
+        title: 'We provide <b>2D bounding box</b> with <b>track ID</b> annotations. We also provide a <b>toolkit</b> to help researchers in processing, analyzing and training on our dataset.',
       },
       {
-        title: 'We build corresponding benchmarks and evaluate popular algorithms for object detection, point cloud segmentation, image segmentation, and panoptic perception. Experiments demonstrate the advantages of radar perception on water surfaces, particularly in adverse lighting and weather conditions.',
+        title: 'We build corresponding benchmarks and evaluate popular algorithms for object detection and object tracking tasks.',
       },
     ];
 
     return (
       <div class="home-page-wrapper content6-wrapper">
-        <div class="ant-row home-page content6" id="WaterScenes">
-          <Divider orientation="center"><h1 name="title" className="title-h1">WaterScenes Dataset</h1></Divider>
+        <div class="ant-row home-page content6" id="USVTrack">
+          <Divider orientation="center"><h1 name="title" className="title-h1">USVTrack Dataset</h1></Divider>
 
           <div class="ant-col content6-text ant-col-xs-24 ant-col-md-24">
             <div className="title-wrapper">
               <div className="chart">
                 {/* <h1 name="title" className="title-h1">WaterScenes Dataset</h1> */}
-                <Image src={adverse}></Image>
+                <Image src={samples}></Image>
               </div>
             </div>
           </div>
@@ -424,7 +424,7 @@ class RadarChart extends React.PureComponent {
         <div class="ant-row home-page content6" id="radar-camera-fusion">
           <Divider orientation="center"><h1 name="title" className="title-h1">Radar-Camera Fusion</h1></Divider>
           <Divider orientation="left" plain>
-            <h2>Characteristic of Radar and Camera Sensors</h2>
+            {/* <h2>Characteristic of Radar and Camera Sensors</h2> */}
             </Divider>
           <div class="ant-col content6-text ant-col-xs-24 ant-col-md-11">
             <Row>
@@ -443,25 +443,22 @@ class RadarChart extends React.PureComponent {
             </Row>
           </div>
           <br></br>
-
+          <br></br>
           <div class="ant-col content6-text ant-col-xs-24 ant-col-md-24">
-            <Divider orientation="left" plain>
-            <h2>4D Radar-Camera Fusion on Water Surfaces</h2>
-            </Divider>
-            
-            <Row align="start">
-              <Col span={24}>
-                <Image src={network}></Image>
-              </Col>
-
-            </Row>
+            <div className="title-wrapper">
+              <div className="chart">
+                {/* <h1 name="title" className="title-h1">WaterScenes Dataset</h1> */}
+                <Image src={results}></Image>
+              </div>
+            </div>
           </div>
+          
         </div>
 
         <div class="ant-row home-page content6" id="Citation">
           <h1 name="title" class="title-h1">Citation</h1>
           <div style={{ backgroundColor: '#f3f6fa', padding: '10px' }}>
-            <code>
+            {/* <code>
               {"@misc{yao2023waterscenes,"}<br></br>
               &nbsp;&nbsp;&nbsp;&nbsp;{"title={WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmarks for Autonomous Driving on Water Surfaces}, "}<br></br>
               &nbsp;&nbsp;&nbsp;&nbsp;{"author={Shanliang Yao and Runwei Guan and Zhaodong Wu and Yi Ni and Zile Huang and Ryan Wen Liu and Weiping Ding and Eng Gee Lim and Yong Yue and Hyungjoon Seo and Ka Lok Man and Jieming Ma and Xiaohui Zhu and Yutao Yue},"}<br></br>
@@ -470,7 +467,7 @@ class RadarChart extends React.PureComponent {
               &nbsp;&nbsp;&nbsp;&nbsp;{"archivePrefix={arXiv},"}<br></br>
               &nbsp;&nbsp;&nbsp;&nbsp;{"primaryClass={cs.CV}"}<br></br>
               {"}"}
-            </code>
+            </code> */}
           </div>
         </div>
 

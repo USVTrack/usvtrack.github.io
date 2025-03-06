@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/logo.png';
+import logo from './images/USVTrack-logo.png';
 
 export const Nav00DataSource = {
   isScrollLink: true,
@@ -15,8 +15,8 @@ export const Nav00DataSource = {
     children: [
       {
         name: 'linkNav',
-        to: 'WaterScenes',
-        children: 'WaterScenes Dataset',
+        to: 'USVTrack',
+        children: 'USVTrack Dataset',
         className: 'menu-item',
       },
       {
@@ -27,16 +27,28 @@ export const Nav00DataSource = {
       },
       {
         name: 'linkNav',
-        to: 'radar-camera-fusion',
+        to: 'https://radar-camera-fusion.github.io',
         children: 'Radar-Camera Fusion',
         className: 'menu-item',
       },
       {
         name: 'linkNav',
-        to: 'Citation',
-        children: 'Citation',
+        to: 'https://github.com/USVTrack/USVTrack',
+        children: 'Github & Download',
         className: 'menu-item',
       },
+      // {
+      //   name: 'linkNav',
+      //   to: 'radar-camera-fusion',
+      //   children: 'Radar-Camera Fusion',
+      //   className: 'menu-item',
+      // },
+      // {
+      //   name: 'linkNav',
+      //   to: 'Citation',
+      //   children: 'Citation',
+      //   className: 'menu-item',
+      // },
     ],
   },
   mobileMenu: { className: 'header2-mobile-menu' },
@@ -90,19 +102,19 @@ export const Banner30DataSource = {
         name: 'slogan',
         className: 'banner3-slogan',
         children:
-          'WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset for Autonomous Driving on Water Surfaces',
+          'USVTrack: USV-Based 4D Radar-Camera Tracking Dataset for Autonomous Driving in Inland Waterways',
         // texty: true,
       },
       {
         name: 'nameEn',
         className: 'banner3-name-en',
-        children: 'Shanliang Yao, Runwei Guan, Zhaodong Wu, Yi Ni, Zile Huang, Ryan Wen Liu, '
+        children: 'Shanliang Yao, Runwei Guan, Yi Ni, Sen Xu, Yong Yue, Xiaohui Zhu, Ryan Wen Liu, '
       },
-      {
-        name: 'nameEn',
-        className: 'banner3-name-en',
-        children: 'Weiping Ding, Eng Gee Lim, Yong Yue, Hyungjoon Seo, Ka Lok Man, Jieming Ma, Xiaohui Zhu, Yutao Yue',
-      },
+      // {
+      //   name: 'nameEn',
+      //   className: 'banner3-name-en',
+      //   children: 'Weiping Ding, Eng Gee Lim, Yong Yue, Hyungjoon Seo, Ka Lok Man, Jieming Ma, Xiaohui Zhu, Yutao Yue',
+      // },
       
       // {
       //   name: 'name',
@@ -113,14 +125,14 @@ export const Banner30DataSource = {
       {
         name: 'time',
         className: 'banner3-time',
-        children: 'University of Liverpool, Xi‘an Jiaotong-Liverpool University, Wuhan University of Technology, Nantong University, Institute of Deep Perception Technology, JITRI',
+        children: 'Yancheng Institute of Technology, Hong Kong University of Science and Technology (Guangzhou), Xi‘an Jiaotong-Liverpool University, Wuhan University of Technology',
       },
       {
         name: 'button',
         className: 'banner3-button',
-        children: 'GitHub: https://github.com/WaterScenes/WaterScenes',
+        children: 'GitHub: https://github.com/USVTrack/USVTrack',
         type: 'primary',
-        href: 'https://github.com/WaterScenes/WaterScenes',
+        href: 'https://github.com/USVTrack/USVTrack',
         target: '_blank',
       },
     ],
@@ -152,7 +164,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2023 <a href="https://github.com/WaterScenes">WaterScenes</a> All Rights Reserved
+        ©2023 <a href="https://github.com/USVTrack">USVTrack</a> All Rights Reserved
       </span>
     ),
   },
