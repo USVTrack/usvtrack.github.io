@@ -164,7 +164,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2023 <a href="https://github.com/USVTrack">USVTrack</a> All Rights Reserved
+        ©2025 <a href="https://github.com/USVTrack">USVTrack</a> All Rights Reserved
       </span>
     ),
   },

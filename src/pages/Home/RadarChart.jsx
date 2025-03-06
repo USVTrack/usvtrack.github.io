@@ -365,7 +365,7 @@ class RadarChart extends React.PureComponent {
         title: 'USVTrack, the first 4D radar-camera tracking dataset in inland waterways, which offers data from multiple sensors, including a 4D radar, monocular camera, GPS, and IMU.',
       },
       {
-        title: 'Our dataset covers a rich diversity of data samples, including <b>various waterways</b> (wide and narrow rivers, canals, moats, docks), diverse <b>time conditions</b> (daytime, nightfall, night), <b>weather conditions</b> (sunny, overcast, rainy, snowy) and <b>lighting conditions</b> (normal, dim, strong).',
+        title: 'USVTrack dataset covers a rich diversity of data samples, including <b>various waterways</b> (wide and narrow rivers, canals, moats, docks), diverse <b>time conditions</b> (daytime, nightfall, night), <b>weather conditions</b> (sunny, overcast, rainy, snowy) and <b>lighting conditions</b> (normal, dim, strong).',
       },
       {
         title: 'We provide <b>2D bounding box</b> with <b>track ID</b> annotations. We also provide a <b>toolkit</b> to help researchers in processing, analyzing and training on our dataset.',
@@ -374,6 +374,7 @@ class RadarChart extends React.PureComponent {
         title: 'We build corresponding benchmarks and evaluate popular algorithms for object detection and object tracking tasks.',
       },
     ];
+
 
     return (
       <div class="home-page-wrapper content6-wrapper">
